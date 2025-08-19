@@ -15,7 +15,6 @@ transformer/
 ├── model.py           # Transformer模型
 ├── data.py            # 动态数据生成及批次处理
 ├── train.py           # 模型训练主脚本
-├── utils.py           # 工具函数，如掩码创建
 ├── inference.py       # 模型推理与测试脚本
 └── README.md          # 本说明文件
 ```
@@ -48,7 +47,7 @@ pip install torch
 python train.py
 ```
 
-你将会看到类似如下的训练日志输出：
+训练日志输出：
 ```
 Using device: cuda
 --- Epoch 1 ---
@@ -67,12 +66,12 @@ Model saved.
 python inference.py
 ```
 
-你将会看到模型的输入和贪心解码后的输出：
+模型的输入和贪心解码后的输出：
 ```
 Input sequence: [[ 1  2  3  4  5  6  7  8  9 10]]
 Model output:   [[ 1  2  3  4  5  6  7  8  9 10]]
 ```
-*如果输出与输入序列完全一致，恭喜你，模型已经成功学会了复制任务！*
+
 
 ## 实现的核心概念
 
