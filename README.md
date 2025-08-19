@@ -86,17 +86,3 @@ Model output:   [[ 1  2  3  4  5  6  7  8  9 10]]
 - [x] **编码器 (Encoder)** 与 **解码器 (Decoder)** 的完整堆叠架构
 - [x] **序列掩码 (Masking)** 用于处理Padding和防止未来信息泄露
 
-## 未来工作
-
-*   [ ] 应用于真实的机器翻译任务（如WMT数据集）。
-*   [ ] 实现更先进的解码策略，如**集束搜索 (Beam Search)**。
-*   [ ] 集成 TensorBoard 或 WandB 来进行训练过程的可视化。
-*   [ ] 实现更现代的Transformer变体，如 Pre-LN 结构。
-
-## 致谢
-
-本项目的实现深受哈佛大学NLP团队的 "[The Annotated Transformer](http://nlp.seas.harvard.edu/2018/04/03/attention.html)" 博客文章启发。
-
-## 许可证
-
-本项目采用 [MIT License](LICENSE)。
